@@ -26,6 +26,11 @@ public class FactorialTest {
         assertEquals(6, factorial(3));
     }
 
+    @Test
+    public void four() {
+        assertEquals(24, factorial(4));
+    }
+
     private int factorial(int i) {
         if (i < 2) {
             return 1;
