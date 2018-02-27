@@ -17,15 +17,20 @@ public class FactorialTest {
     }
 
     @Test
-    public void Two() {
+    public void two() {
         assertEquals(2, factorial(2));
+    }
+
+    @Test
+    public void three() {
+        assertEquals(6, factorial(3));
     }
 
     private int factorial(int i) {
         if (i < 2) {
             return 1;
         } else {
-            return i;
+            return i * (factorial(i - 1));
         }
 
     }
