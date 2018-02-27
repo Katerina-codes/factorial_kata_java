@@ -11,6 +11,11 @@ public class FactorialTest {
        assertEquals(1, factorial(0));
     }
 
+    @Test
+    public void one() {
+        assertEquals(1, factorial(1));
+    }
+
     private int factorial(int i) {
         return 1;
     }
